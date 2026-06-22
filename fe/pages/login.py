@@ -35,7 +35,7 @@ with st.form("login.."):
             # st.stop()
 
             if l_role=="Recruiter":
-                st.switch_page("pages/R_Dashboard.py")
+                st.switch_page("pages/R_dashboard.py")
             elif l_role=="JobSeeker":
                 st.switch_page("pages/J_dashboard.py")
         if isinstance(data,str):
