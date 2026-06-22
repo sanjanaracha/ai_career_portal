@@ -4,7 +4,7 @@ from streamlit_local_storage import LocalStorage
 st.title("Login")
 
 ls=LocalStorage()
-s_url="http://127.0.0.1:8000"
+s_url=st.secrets["be_url"]
 
 with st.form("login.."):
     email=st.text_input("email")

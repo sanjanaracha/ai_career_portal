@@ -3,7 +3,7 @@ import streamlit as st
 import requests as r
 ls = LocalStorage()
 
-b_url="http://127.0.0.1:8000"
+b_url=st.secrets["be_url"]
 
 user = ls.getItem("logged_user")
 

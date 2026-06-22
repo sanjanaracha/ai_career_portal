@@ -5,7 +5,7 @@ from streamlit_local_storage import LocalStorage
 
 ls=LocalStorage()
 
-se_url="http://127.0.0.1:8000"
+se_url=st.secrets["be_url"]
 st.title("Welcome ti Job Seeker Dashboard")
 
 file=st.file_uploader("choose",type=["pdf"])
